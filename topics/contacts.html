@@ -12,25 +12,27 @@
     <nav class="main-nav">
         <div class="logo">
             <a href="../index.html">
-                <img src="../mitryayug.jpg" alt="MitraYug Logo" class="logo-img">
+                <img src="../mitrayug.jpg" alt="MitraYug Logo" class="logo-img">
                 <h1>MitraYug</h1>
             </a>
         </div>
         <div class="nav-links">
             <a href="../index.html" data-translate="home">Home</a>
+            <a href="../all-topics.html" data-translate="allTopics">All Topics</a>
+            <a href="../about.html" data-translate="aboutUs">About Us</a>
             <a href="../help.html" data-translate="help">Help</a>
         </div>
         <div class="accessibility-controls">
-            <button id="contrastToggle" aria-label="Toggle high contrast mode">
+            <button id="contrastToggle" aria-label="Toggle high contrast mode" class="tooltip-trigger" data-tooltip="Toggle high contrast mode">
                 <i class="fas fa-adjust"></i>
             </button>
-            <button id="fontSizeToggle" aria-label="Toggle large text">
+            <button id="fontSizeToggle" aria-label="Toggle large text" class="tooltip-trigger" data-tooltip="Toggle large text">
                 <i class="fas fa-text-height"></i>
             </button>
-            <button id="voiceToggle" aria-label="Toggle voice assistance">
+            <button id="voiceToggle" aria-label="Toggle voice assistance" class="tooltip-trigger" data-tooltip="Toggle voice assistance">
                 <i class="fas fa-volume-up"></i>
             </button>
-            <button id="languageToggle" aria-label="Toggle language">
+            <button id="languageToggle" aria-label="Toggle language" class="tooltip-trigger" data-tooltip="Toggle language">
                 <i class="fas fa-globe"></i>
             </button>
         </div>
@@ -129,13 +131,11 @@
 
         <!-- Module Navigation -->
         <div class="module-navigation">
-            <a href="receive-call.html" class="nav-button prev-button" data-translate="previousTopic">
-                <i class="fas fa-arrow-left"></i>
-                Receiving Calls
+            <a href="receive-call.html" class="nav-button">
+                <i class="fas fa-arrow-left"></i> Previous: Receiving Calls
             </a>
-            <a href="whatsapp-text.html" class="nav-button next-button" data-translate="nextTopic">
-                WhatsApp Messaging
-                <i class="fas fa-arrow-right"></i>
+            <a href="../index.html" class="nav-button">
+                <i class="fas fa-home"></i> Home
             </a>
         </div>
     </main>
@@ -163,6 +163,7 @@
         </div>
     </footer>
 
+    <script src="../js/languages.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html> 
